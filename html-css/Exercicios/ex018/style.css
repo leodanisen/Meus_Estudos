@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Font';
+    src: url('fonts/BAUHS93.TTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+
+    /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-att (apple advanced Typography)
+        - svg
+        
+    */
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Font', 'Times New Roman', Times, serif;
+    font-size: 3em;
+}

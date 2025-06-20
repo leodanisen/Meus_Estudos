@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagem Dinamicas</h1>
+    <p>essas imagen é dinamica, sendo assim pode diminuir o tamanho da aba que funciona de todas as formas</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="Imagem/imagem-P.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="Imagem/imagem-M.jpg" type="image/jpg">
+        <img src="imagem/imagem-G.jpg" alt="imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzir um audio</h1>
+    <p>vamos colocar audio no site </p>
+    <audio src="imagem/guanacast-33.mp3" controls autoplay></audio>
+
+    <h1>Agora em outros formatos</h1>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="imagem/guanacast-33.mp3" type="audio/mpeg">
+        <source src="imagem/guanacast-33.ogg" type="audio/ogg">
+        <source src="imagem/guanacast-33.wav" type="audio/wav"> 
+        <p>Seu navegador não toca audio voce pode baixa <a href="imagem/guanacast-33.mp3" download="guanacast-33" type="audio/mpeg">clique aqui para baixar</a></p>
+    </audio>
+
+</body>
+</html>
