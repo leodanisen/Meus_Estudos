@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    /*
+        #   =   id
+        .   =   class
+        :   =   pseudo-classe
+        ::  =   pseudo-elemento
+        >   =   filho direto
+        +   =   irmão direto
+        ~   =   irmão
+        *   =   todos os elementos
+        :hover = quando o mouse passa por cima
+        :active = quando o elemento é clicado
+        :visited = quando o link já foi visitado
+        :link = quando o link ainda não foi visitado
+        
+    */
+
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+    }
+    a:visited {
+        color: purple
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        color: yellow;
+    }
+
+    a::after {
+        content: ' [link]';
+        color: grey;
+        font-weight: normal;
+    }
+    .especial:active{
+        background-color: rgb(255, 140, 140)
+    }
+    .especial::before {
+         content: '-';
+    }
+    .especial::after {
+        content: '-';
+    }
+    
+</style>
+<body>
+
+    <h1>Personalizando Links</h1>
+    
+    <li><a href="https://github.com/leodanisen/Meus_Estudos" target="_blank">Repositorio GitHub</a></li>
+    <li><a href="https://www.youtube.com/c/CursoemVídeo" target="_blank">Canal do YouTube</a></li>
+    <li><a href="https://www.cursoemvideo.com" class="especial" target="_blank">Site do CursoemVideo</a></li>
+
+</body>
+</html>
